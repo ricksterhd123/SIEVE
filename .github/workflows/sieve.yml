@@ -19,7 +19,9 @@ jobs:
         cache-from: type=gha
         cache-to: type=gha,mode=max
         load: true
+    - name: setup build folder
+      run: mkdir -p build
     - name: Build SIEVE
-      run: mkdir -p build && docker container run -v "./build:/sieve/build" sieve:latest
+      run: docker container run -v "./build:/sieve/build" sieve:latest
     - name: Run SIEVE.js
       run: node build/SIEVE.js
