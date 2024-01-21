@@ -17,7 +17,8 @@ jobs:
         context: .
         cache-from: type=gha
         cache-to: type=gha,mode=max
-    - name: Build the Docker image
-      run: bash build.sh
+        load: true
+    - name: Build SIEVE
+      run: mkdir -p build && docker container run -v "./build:/sieve/build" sieve:latest
     - name: Run SIEVE.js
       run: node build/SIEVE.js
