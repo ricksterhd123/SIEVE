@@ -6,4 +6,9 @@
 - Docker
 
 ## Setup
+Use
+- `bash run.sh`
+
+Or alternatively,
 - `bash build.sh`
+- `node build/SIEVE.js`
