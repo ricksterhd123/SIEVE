@@ -9,10 +9,10 @@ on:
 jobs:
 
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: bash build.sh
+    - name: Run the build output
+      run: node build/SIEVE.js
