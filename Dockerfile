@@ -4,7 +4,7 @@ SHELL ["/bin/bash", "-c"]
 RUN apt update
 RUN apt install -y build-essential cmake git curl wget
 RUN git clone https://github.com/emscripten-core/emsdk.git
-RUN wget https://gmplib.org/download/gmp/gmp-6.3.0.tar.xz
+RUN wget https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz
 RUN tar -xf gmp-6.3.0.tar.xz
 
 WORKDIR /nodejs
