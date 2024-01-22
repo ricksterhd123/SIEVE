@@ -33,3 +33,7 @@ This is as far as I've got with my sieve, generating primes up to 2 ^ 20 = 10485
 - [] use better method or data structure?
 - [] Try get primes up to 2 ^ 32 within a nice time
 - [] Make it inteface with Javascript, load into demo github page
+
+## References
+- https://www.geeksforgeeks.org/sieve-of-atkin/
+- https://github.com/mccricardo/sieve_of_atkin/blob/master/sieve_of_atkin.py#L31

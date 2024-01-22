@@ -118,6 +118,7 @@ public:
 
 // Tweaked implementation of
 // https://www.geeksforgeeks.org/sieve-of-atkin/
+// https://github.com/mccricardo/sieve_of_atkin/blob/master/sieve_of_atkin.py#L31
 vector<mpz_class> sieveOfAtkin(BMPZMAP &map, mpz_class limit)
 {
     vector<mpz_class> primes;
