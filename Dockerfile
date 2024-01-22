@@ -26,4 +26,4 @@ COPY SIEVE.cpp .
 COPY CMakeLists.txt .
 
 WORKDIR /sieve/build
-ENTRYPOINT source /emsdk/emsdk_env.sh && emcmake cmake .. && emmake make
+ENTRYPOINT source /emsdk/emsdk_env.sh && emcmake cmake -DEMSCRIPTEN=TRUE .. && emmake make
